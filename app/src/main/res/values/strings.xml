@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Workout Custom</string>
+    <string name="seconds">seconds</string>
+    <string name="reps">reps</string>
+</resources>

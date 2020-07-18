@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/workoutlistrow"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="16dp"
+    android:background="@drawable/bglistworkout">
+
+    <TextView
+        android:id="@+id/txtlistname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginBottom="24dp"
+        android:layout_weight="100"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="18sp"
+        tools:text="Workout List Name" />
+
+    <TextView
+        android:id="@+id/txtRepSecond"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginBottom="24dp"
+        android:layout_weight="3"
+        android:gravity="right"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="18sp"
+        tools:text="30" />
+
+    <TextView
+        android:id="@+id/textViewRepSecond"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="24dp"
+        android:layout_weight="1"
+        android:gravity="left"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="18sp"
+        tools:text="reps" />
+</LinearLayout>

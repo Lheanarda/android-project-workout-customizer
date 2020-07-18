@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <EditText
+        android:id="@+id/edtMinuteBreak"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:inputType="number"
+        android:maxLength="2"
+        android:text="01"
+        android:textSize="32sp"
+        app:layout_constraintBottom_toBottomOf="@+id/textView13"
+        app:layout_constraintEnd_toStartOf="@+id/textView13"
+        app:layout_constraintTop_toTopOf="@+id/textView13" />
+
+    <EditText
+        android:id="@+id/edtSecondBreak"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:inputType="number"
+        android:maxLength="2"
+        android:text="00"
+        android:textSize="32sp"
+        app:layout_constraintBottom_toBottomOf="@+id/textView13"
+        app:layout_constraintStart_toEndOf="@+id/textView13"
+        app:layout_constraintTop_toTopOf="@+id/textView13" />
+
+    <TextView
+        android:id="@+id/textView13"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="45dp"
+        android:text=":"
+        android:textColor="#000"
+        android:textSize="45dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView14"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Min"
+        app:layout_constraintEnd_toStartOf="@+id/textView13"
+        app:layout_constraintStart_toStartOf="@+id/edtMinuteBreak"
+        app:layout_constraintTop_toBottomOf="@+id/edtMinuteBreak" />
+
+    <TextView
+        android:id="@+id/textView15"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sec"
+        app:layout_constraintEnd_toEndOf="@+id/edtSecondBreak"
+        app:layout_constraintStart_toStartOf="@+id/edtSecondBreak"
+        app:layout_constraintTop_toBottomOf="@+id/edtSecondBreak" />
+
+    <ImageView
+        android:id="@+id/imgPlusMinBreak"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toTopOf="@+id/edtMinuteBreak"
+        app:layout_constraintEnd_toEndOf="@+id/edtMinuteBreak"
+        app:layout_constraintStart_toStartOf="@+id/edtMinuteBreak"
+        app:srcCompat="@drawable/ic_arrowup" />
+
+    <ImageView
+        android:id="@+id/imgPlusSecBreak"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toTopOf="@+id/edtSecondBreak"
+        app:layout_constraintEnd_toEndOf="@+id/edtSecondBreak"
+        app:layout_constraintStart_toStartOf="@+id/edtSecondBreak"
+        app:srcCompat="@drawable/ic_arrowup" />
+
+    <ImageView
+        android:id="@+id/imgMinusMinBreak"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toStartOf="@+id/textView13"
+        app:layout_constraintStart_toStartOf="@+id/edtMinuteBreak"
+        app:layout_constraintTop_toBottomOf="@+id/textView14"
+        app:srcCompat="@drawable/ic_arrowdrop" />
+
+    <ImageView
+        android:id="@+id/imgMinusSecBreak"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="@+id/edtSecondBreak"
+        app:layout_constraintStart_toStartOf="@+id/edtSecondBreak"
+        app:layout_constraintTop_toBottomOf="@+id/textView15"
+        app:srcCompat="@drawable/ic_arrowdrop" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
